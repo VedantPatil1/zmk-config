@@ -9,6 +9,11 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 
+/* Override LED chain-length: 27 = 6 underglow + 21 per-key LEDs per half */
+&led_strip {
+    chain-length = <27>;
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
